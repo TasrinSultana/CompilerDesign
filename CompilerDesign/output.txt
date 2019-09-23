@@ -1,0 +1,249 @@
+#include<bits/stdc++.h> : Invalid Input
+using : identifier
+namespace : identifier
+std; : Invalid Input
+string : identifier
+keyword[35] : Invalid Input
+= : Arithmetic Operator
+{"auto","double","int","struct","break","else","long", : Invalid Input
+"switch","case","enum","register","typedef","char", : Invalid Input
+"extern","return","union","const","float","short", : Invalid Input
+"unsigned","continue","for","signed","void","default", : Invalid Input
+"goto","sizeof","voltile","do","if","static","while","bool"}; : Invalid Input
+bool : Keyword
+isArithmetic( : Invalid Input
+string : identifier
+ch) : Invalid Input
+{ : Invalid Input
+if : Keyword
+(ch : Invalid Input
+== : Relational Operator
+"+" : Invalid Input
+|| : Relational Operator
+ch : identifier
+== : Relational Operator
+"-" : Invalid Input
+|| : Relational Operator
+ch : identifier
+== : Relational Operator
+"*" : Invalid Input
+|| : Relational Operator
+ch : identifier
+== : Relational Operator
+"/" : Invalid Input
+|| : Relational Operator
+ch : identifier
+== : Relational Operator
+"%" : Invalid Input
+|| : Relational Operator
+ch : identifier
+== : Relational Operator
+"=") : Invalid Input
+return : Keyword
+true : identifier
+; : Invalid Input
+else : Keyword
+return : Keyword
+false : identifier
+; : Invalid Input
+} : Invalid Input
+bool : Keyword
+isRelational( : Invalid Input
+string : identifier
+ch) : Invalid Input
+{ : Invalid Input
+if : Keyword
+(ch : Invalid Input
+== : Relational Operator
+"<" : Invalid Input
+|| : Relational Operator
+ch : identifier
+== : Relational Operator
+">" : Invalid Input
+|| : Relational Operator
+ch : identifier
+== : Relational Operator
+"!=" : Invalid Input
+|| : Relational Operator
+ch : identifier
+== : Relational Operator
+"==" : Invalid Input
+|| : Relational Operator
+ch : identifier
+== : Relational Operator
+"<=" : Invalid Input
+|| : Relational Operator
+ch : identifier
+== : Relational Operator
+">=" : Invalid Input
+|| : Relational Operator
+ch : identifier
+== : Relational Operator
+"||" : Invalid Input
+|| : Relational Operator
+ch : identifier
+== : Relational Operator
+"&&") : Invalid Input
+return : Keyword
+true : identifier
+; : Invalid Input
+else : Keyword
+return : Keyword
+false : identifier
+; : Invalid Input
+} : Invalid Input
+bool : Keyword
+isIncrement( : Invalid Input
+string : identifier
+ch) : Invalid Input
+{ : Invalid Input
+if : Keyword
+(ch : Invalid Input
+== : Relational Operator
+"++" : Invalid Input
+|| : Relational Operator
+ch : identifier
+== : Relational Operator
+"--") : Invalid Input
+return : Keyword
+true : identifier
+; : Invalid Input
+else : Keyword
+return : Keyword
+false : identifier
+; : Invalid Input
+} : Invalid Input
+bool : Keyword
+isLogical( : Invalid Input
+string : identifier
+ch) : Invalid Input
+{ : Invalid Input
+if : Keyword
+(ch : Invalid Input
+== : Relational Operator
+"&&" : Invalid Input
+|| : Relational Operator
+ch : identifier
+== : Relational Operator
+"||") : Invalid Input
+return : Keyword
+true; : Invalid Input
+else : Keyword
+return : Keyword
+false; : Invalid Input
+} : Invalid Input
+bool : Keyword
+identifier(string : Invalid Input
+s) : Invalid Input
+{ : Invalid Input
+if(isalpha(s[0]) : Invalid Input
+|| : Relational Operator
+s[0]=='_') : Invalid Input
+{ : Invalid Input
+int : Keyword
+cnt : identifier
+= : Arithmetic Operator
+0, : Invalid Input
+len : identifier
+= : Arithmetic Operator
+s.size(); : Invalid Input
+for(int : Invalid Input
+i=0; : Invalid Input
+i<len; : Invalid Input
+i++) : Invalid Input
+if(isdigit(s[i]) : Invalid Input
+|| : Relational Operator
+isalpha(s[i]) : Invalid Input
+|| : Relational Operator
+s[i]=='_') : Invalid Input
+cnt++; : Invalid Input
+if(cnt==len) : Invalid Input
+return : Keyword
+1; : Invalid Input
+} : Invalid Input
+return : Keyword
+0; : Invalid Input
+} : Invalid Input
+int : Keyword
+main(){ : Invalid Input
+freopen("my_8.cpp", : Invalid Input
+"r", : Invalid Input
+stdin); : Invalid Input
+freopen("output.txt", : Invalid Input
+"w", : Invalid Input
+stdout); : Invalid Input
+string : identifier
+str; : Invalid Input
+while(cin : Invalid Input
+>> : Invalid Input
+str){ : Invalid Input
+cout : identifier
+<< : Invalid Input
+str : identifier
+<< : Invalid Input
+" : Invalid Input
+: : Invalid Input
+"; : Invalid Input
+if(str.size() : Invalid Input
+== : Relational Operator
+1 : Invalid Input
+&& : Relational Operator
+isArithmetic(str)) : Invalid Input
+cout<<"Arithmetic : Invalid Input
+Operator"<<endl; : Invalid Input
+else : Keyword
+if : Keyword
+(isRelational(str)) : Invalid Input
+cout<<"Relational : Invalid Input
+Operator"<<endl; : Invalid Input
+else : Keyword
+if : Keyword
+(isIncrement(str)) : Invalid Input
+cout<<"Increment : Invalid Input
+Decrement : identifier
+Operator"<<endl; : Invalid Input
+else : Keyword
+if(isLogical(str)) : Invalid Input
+cout<<"Logical : Invalid Input
+Operator"<<endl; : Invalid Input
+else : Keyword
+{ : Invalid Input
+int : Keyword
+ck : identifier
+= : Arithmetic Operator
+0; : Invalid Input
+for(int : Invalid Input
+i : identifier
+= : Arithmetic Operator
+0; : Invalid Input
+i : identifier
+< : Relational Operator
+34; : Invalid Input
+i : identifier
+++ : Increment Decrement Operator
+) : Invalid Input
+{ : Invalid Input
+if : Keyword
+(str : Invalid Input
+== : Relational Operator
+keyword[i]) : Invalid Input
+ck : identifier
+= : Arithmetic Operator
+1; : Invalid Input
+} : Invalid Input
+if : Keyword
+(ck : Invalid Input
+== : Relational Operator
+1) : Invalid Input
+cout<<"Keyword"<<endl; : Invalid Input
+else : Keyword
+if(identifier(str)) : Invalid Input
+cout<<"identifier"<<endl; : Invalid Input
+else : Keyword
+cout<<"Invalid : Invalid Input
+Input"<<endl; : Invalid Input
+} : Invalid Input
+} : Invalid Input
+return : Keyword
+0; : Invalid Input
+} : Invalid Input
